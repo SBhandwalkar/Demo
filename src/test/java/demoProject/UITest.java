@@ -16,7 +16,7 @@ public class UITest {
 	@Test
 	public void checkProductName() throws InterruptedException
 	{
-		
+	
 		WebDriverManager.edgedriver().setup();
 		driver= new EdgeDriver();
 		driver.manage().window().maximize();

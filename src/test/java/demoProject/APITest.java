@@ -55,6 +55,20 @@ public class APITest {
 	
 	}
 	
+	@Test
+	public void verifyDeleteAPI()
+	{
+		String baseUri="https://reqres.in/";
+		
+		Response response=given().contentType(ContentType.JSON).baseUri(baseUri).when().delete("api/users/2");
+		System.out.println(response.asString());
+		
+		Assert.assertEquals(response.statusCode(), 204);
+	
+	}
+	
+	
+	
 	
 
 	
